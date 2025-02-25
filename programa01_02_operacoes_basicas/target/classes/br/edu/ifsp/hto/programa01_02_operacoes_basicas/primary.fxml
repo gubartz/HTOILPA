@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField ?>
+<?import javafx.geometry.Insets?>
+
+<VBox spacing="10.0" alignment="CENTER" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifsp.hto.programa01_02_operacoes_basicas.OperacoesBasicasController">
+    <children>
+        <HBox spacing="10.0" alignment="CENTER" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+           <children>
+              <Label text="Número 1:" />
+              <TextField fx:id="txtNum1" />
+              <Label text="Número 2:" />
+              <TextField fx:id="txtNum2" />      
+           </children>
+        </HBox>
+        <HBox spacing="10.0" alignment="CENTER" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+            <Button text="+" onAction="#calculateAdd" />
+            <Button text="-" onAction="#calculateSubtract" />
+            <Button text="*" onAction="#calculateMultiply" />
+            <Button text="/" onAction="#calculateDivide" />
+        </HBox>
+        <Label fx:id="lblResult" text="Resultado: "/>
+    </children>
+</VBox>
+
+
