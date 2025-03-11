@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifsp.hto.exercicio01_velocidade_media.VelocidadeMediaController">
+   <children>
+      <HBox alignment="CENTER" spacing="10.0">
+         <children>
+            <Label alignment="CENTER_RIGHT" minWidth="100.0" text="Deslocamento:" HBox.hgrow="ALWAYS" />
+            <TextField fx:id="txtDeslocamento" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER" spacing="10.0">
+         <children>
+            <Label alignment="CENTER_RIGHT" minWidth="100.0" text="Tempo:" HBox.hgrow="ALWAYS" />
+            <TextField fx:id="txtTempo" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <Button mnemonicParsing="false" onAction="#calcularVelocidadeMedia" text="Calcular" />
+      <Label fx:id="lblResultado" alignment="CENTER_RIGHT">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding></Label>
+   </children>
+</VBox>

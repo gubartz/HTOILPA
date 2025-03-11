@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifsp.hto.exercicio01_velocidade_media.VelocidadeMediaController">
+   <children>
+      <GridPane alignment="CENTER">
+         <children>
+            <Label contentDisplay="RIGHT" text="Deslocamento:" GridPane.columnIndex="0" GridPane.rowIndex="0">
+               <padding>
+                  <Insets bottom="10.0" right="10.0" top="10.0" />
+               </padding></Label>
+            <TextField fx:id="txtDeslocamento" GridPane.columnIndex="1" GridPane.rowIndex="0" GridPane.halignment="LEFT" />            
+            <Label contentDisplay="RIGHT" text="Tempo:" GridPane.columnIndex="0" GridPane.rowIndex="1">
+               <padding>
+                  <Insets bottom="10.0" right="10.0" top="10.0" />
+               </padding></Label>
+            <TextField fx:id="txtTempo" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" />               
+         </children>
+         <columnConstraints>
+            <ColumnConstraints halignment="RIGHT" />
+            <ColumnConstraints halignment="RIGHT" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+      </GridPane>
+      <Button mnemonicParsing="false" onAction="#calcularVelocidadeMedia" text="Calcular" />
+      <Label fx:id="lblResultado" />
+   </children>
+</VBox>
