@@ -1,0 +1,4 @@
+br\edu\ifsp\hto\listatarefa\model\Tarefa.class
+br\edu\ifsp\hto\listatarefa\PrimaryController.class
+module-info.class
+br\edu\ifsp\hto\listatarefa\App.class

@@ -1,0 +1,6 @@
+br\edu\ifsp\hto\lista_tarefas\App.class
+module-info.class
+br\edu\ifsp\hto\lista_tarefas\PrimaryController$1.class
+br\edu\ifsp\hto\lista_tarefas\TarefaItemController.class
+br\edu\ifsp\hto\lista_tarefas\Tarefa.class
+br\edu\ifsp\hto\lista_tarefas\PrimaryController.class
