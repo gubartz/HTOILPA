@@ -5,7 +5,7 @@
 
 <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifsp.hto.lista_tarefas.TarefaItemController">
    <children>
-      <Label fx:id="txtTitulo" />
-      <Label fx:id="txtDescricao" />
+      <Label fx:id="lblTitulo" text="É o Título" />
+      <Label fx:id="lblDescricao" style="-fx-background-color: #FF0000;" text="É a Descrição" />
    </children>
 </VBox>

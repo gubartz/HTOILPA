@@ -19,9 +19,9 @@ public class TarefaItemController implements Initializable {
 
 
     @FXML
-    private Label txtTitulo;
+    private Label lblTitulo;
     @FXML
-    private Label txtDescricao;
+    private Label lblDescricao;
     /**
      * Initializes the controller class.
      */
@@ -30,9 +30,9 @@ public class TarefaItemController implements Initializable {
         // TODO
     }    
 
-    void setTarefa(Tarefa tarefa) {
-        txtTitulo.setText(tarefa.getTitulo());
-        txtDescricao.setText(tarefa.getDescricao());
+    public void setTarefa(Tarefa tarefa) {
+        lblTitulo.setText(tarefa.getTitulo());
+        lblDescricao.setText(tarefa.getDescricao());
     }
     
 }

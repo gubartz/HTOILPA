@@ -17,7 +17,6 @@ public class Tarefa {
         this.titulo = titulo;
         this.descricao = descricao;
     }
-    
 
     public String getTitulo() {
         return titulo;
