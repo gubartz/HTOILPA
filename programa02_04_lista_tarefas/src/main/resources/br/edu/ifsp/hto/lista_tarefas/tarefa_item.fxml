@@ -3,9 +3,18 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
 
+<!-- TODO(2) Definir o layout para um item da ListView. Isso significa que para
+cada item que for ser criado na ListView esse layout será utilizado.
+Note na proriedade fx:controller que este fxml possui um controller em 
+br.edu.ifsp.hto.lista_tarefas.TarefaItemController. -->
 <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifsp.hto.lista_tarefas.TarefaItemController">
-   <children>
-      <Label fx:id="lblTitulo" style="-fx-font-size: 14; -fx-font-weight: bold;" text="É o Título" />
-      <Label fx:id="lblDescricao" text="É a Descrição" />
-   </children>
+    <children>
+        <!-- TODO(3) Definir um label para o título da tarefa. Colocar um estilo
+        para que o tamanho do texto seja maior e a fonte em negrito. -->
+        <Label fx:id="lblTitulo" style="-fx-font-size: 14; -fx-font-weight: bold;" text="É o Título" />
+        <!-- TODO(4) Definir um label para  descrição.
+        Apesar dos dois labels terem um texto definido eles serão sempre
+        substituídos pela valor que estiver um objeto Tarefa da ObservableList. -->
+        <Label fx:id="lblDescricao" text="É a Descrição" />
+    </children>
 </VBox>

@@ -5,10 +5,19 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.VBox?>
 
+<!-- TODO(1) Criar o layout da tela. 
+Note o valor da propriedade fx:controller, que indica a classe controller ligada à este layout.
+-->
 <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifsp.hto.lista_tarefas.PrimaryController">
-   <children>
-      <TextField fx:id="txtTarefa" promptText="Digite uma nova tarefa" />
-      <Button fx:id="btnAdicionar" mnemonicParsing="false" onAction="#adicionarItem" text="Adicionar Tarefa" />
-      <ListView fx:id="listView" />
-   </children>
+    <children>
+        <!-- TODO(2) Definir um campo para que o usuário entre com a descrição da tarefa. -->
+        <TextField fx:id="txtTarefa" promptText="Digite uma nova tarefa" />
+        <!--TODO(3) Definir um botão cuja ação é adicionar a tarefa em uma lista. 
+        Note que o onAction define um método a ser chamado/executado no controller
+        -->
+        <Button fx:id="btnAdicionar" mnemonicParsing="false" onAction="#adicionarItem" text="Adicionar Tarefa" />
+        <!-- TODO(4) Definir um ListView, que é um componente de uma lista rolável de itens
+        mantidos em um objeto do tipo lista do java-->
+        <ListView fx:id="lvTarefas" />
+    </children>
 </VBox>

@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
- */
 package br.edu.ifsp.hto.lista_tarefas;
 
 import java.net.URL;
@@ -10,29 +6,25 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 
 import javafx.scene.control.Label;
-/**
- * FXML Controller class
- *
- * @author Gustavo
- */
-public class TarefaItemController implements Initializable {
 
+// TODO(5) Definir um controller para o tarefa_item.fxml
+public class TarefaItemController implements Initializable {
 
     @FXML
     private Label lblTitulo;
     @FXML
     private Label lblDescricao;
-    /**
-     * Initializes the controller class.
-     */
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }    
+    }
 
+    // TODO(6) Quando um item da ListView for ser criado chamamos este método
+    // passando uma Tarefa e utilizar o valor correspondente para preencher os
+    // itens definimos no tarefa_item.fxml.
     public void setTarefa(Tarefa tarefa) {
         lblTitulo.setText(tarefa.getTitulo());
         lblDescricao.setText(tarefa.getDescricao());
     }
-    
+
 }
